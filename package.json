@@ -1,7 +1,7 @@
 {
   "name": "pocketbase-vite-serverside",
   "author": "Chris King",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "main": "./lib/esm/index.mjs",
   "types": "./lib/esm/types/index.d.ts",
@@ -9,6 +9,10 @@
   "files": [
     "lib/**/*"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Morzaram/pocketbase-vite-serverside"
+  },
   "engines": {
     "node": ">=15"
   },
