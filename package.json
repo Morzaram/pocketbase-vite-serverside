@@ -1,0 +1,45 @@
+{
+  "name": "pocketbase-vite-serverside",
+  "author": "Chris King",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "./lib/esm/index.mjs",
+  "types": "./lib/esm/types/index.d.ts",
+  "type": "module",
+  "files": [
+    "lib/**/*"
+  ],
+  "engines": {
+    "node": ">=15"
+  },
+  "scripts": {
+    "clean": "rm -rf ./lib",
+    "build": "npm run clean && npm run build:esm",
+    "build:esm": "tsc -p ./configs/tsconfig.esm.json && mv lib/esm/index.js lib/esm/index.mjs",
+    "build:cjs": "tsc -p ./configs/tsconfig.cjs.json",
+    "prepack": "npm run build"
+  },
+  "dependencies": {
+    "pocketbase": "^0.10.1",
+    "vite": "^4.1.1"
+  },
+  "peerDependencies": {},
+  "devDependencies": {
+    "tslib": "^2.5.0",
+    "typescript": "^4.9.5"
+  },
+  "keywords": [
+    "vite",
+    "astro",
+    "pocketbase",
+    "auth"
+  ],
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./lib/esm/types/index.d.ts",
+        "default": "./lib/esm/index.mjs"
+      }
+    }
+  }
+}
