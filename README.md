@@ -5,7 +5,9 @@ Hey there, I made this light version to have a way to call authorization once to
 
 1. Install by one of the following
    `yarn add pocketbast-vite-serverside`
+
    `npm i pocketbase-vite-serverside`
+
 2. Add the env variables (see examples below)
 3. call `import { authPb } from "pocketbase-vite-serverside";` in the files you want to make a requst from
 4. Call `authPb` like the normal `pb` client
