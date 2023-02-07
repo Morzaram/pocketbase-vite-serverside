@@ -4,6 +4,7 @@ Hey there, I made this light version to have a way to call authorization once to
 [NPM package](https://www.npmjs.com/package/pocketbase-vite-serverside)
 
 1. Install by one of the following
+
    `yarn add pocketbast-vite-serverside`
 
    `npm i pocketbase-vite-serverside`
